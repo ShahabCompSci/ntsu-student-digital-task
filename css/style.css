@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.top-bar {
+  background: #29235c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.top-bar input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+
+.top-buttons button {
+    color: #29235c;
+    font-weight: bold;
+    background: #fff;
+    padding: 10px 20px 10px 20px;
+    border: 3px #fff solid;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.logo {
+  height: 100px;
+  margin-right: 250px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+
+.hero {
+  background: url('../assets/IAS.png') no-repeat center center/cover;
+  background-size: contain;
+  background-position: center top; 
+  background-repeat: no-repeat;
+  height: 1920px; 
+  width: 100%;
+  color: white;
+  padding-top: 20px;
+  font-size: 2em;
+}
+
+.hero span {
+  color: yellow;
+}
+
+.popular-links {
+  background: #f1f1f1;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.link-card {
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.purple { background: #7c3aed; }
+.red    { background: #ef4444; }
+.orange { background: #f97316; }
+.teal   { background: #14b8a6; }
