@@ -229,6 +229,50 @@ nav ul {
   font-weight: bold;
 }
 
+.student-digital-hub {
+  padding: 60px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.student-digital-hub h2 {
+  color: #29235c;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hub-item {
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.hub-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hub-item h3 {
+  color: #29235c;
+  margin-bottom: 10px;
+}
+
+.hub-item p {
+  color: #444;
+  font-size: 0.95em;
+}
+
 
 .purple { background: #7c3aed; }
 .red    { background: #ef4444; }

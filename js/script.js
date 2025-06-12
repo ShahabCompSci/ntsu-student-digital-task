@@ -83,3 +83,8 @@ function getBotReply(userInput) {
   if (lower.includes('support')) return "You can visit the Support & Advice section for wellbeing, housing, or academic help.";
   return "I'm here to help! Please check our menu or try asking something else.";
 }
+
+// Simulated announcement popup
+function showAnnouncement() {
+  alert("📰 Latest Update: NTSU Summer Ball tickets go on sale this Friday at 10 AM!");
+}
