@@ -153,6 +153,82 @@ nav ul {
   color: #333;
 }
 
+/* Chatbot */
+#chatbot {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-family: Arial, sans-serif;
+  z-index: 999;
+}
+
+#chat-toggle {
+  background: #29235c;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+#chat-box {
+  width: 300px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+}
+
+#chat-box.hidden {
+  display: none;
+}
+
+#chat-header {
+  background: #29235c;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 0.9em;
+}
+
+#chat-input {
+  border: none;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+}
+
+.chat-msg {
+  margin-bottom: 10px;
+}
+
+.chat-user {
+  text-align: right;
+  color: #333;
+}
+
+.chat-bot {
+  text-align: left;
+  color: #29235c;
+  font-weight: bold;
+}
+
 
 .purple { background: #7c3aed; }
 .red    { background: #ef4444; }

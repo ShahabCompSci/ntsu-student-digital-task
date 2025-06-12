@@ -46,3 +46,40 @@ if (todaysEvents.length === 0) {
     container.appendChild(card);
   });
 }
+
+// Chat toggle button
+document.getElementById('chat-toggle').addEventListener('click', () => {
+  document.getElementById('chat-box').classList.toggle('hidden');
+});
+
+// Handle user input
+document.getElementById('chat-input').addEventListener('keypress', function(e) {
+  if (e.key === 'Enter') {
+    const input = this.value.trim();
+    if (input === '') return;
+
+    appendMessage(input, 'user');
+    this.value = '';
+
+    // Simulate bot response
+    const reply = getBotReply(input);
+    setTimeout(() => appendMessage(reply, 'bot'), 600);
+  }
+});
+
+function appendMessage(message, sender) {
+  const msgDiv = document.createElement('div');
+  msgDiv.classList.add('chat-msg', `chat-${sender}`);
+  msgDiv.textContent = message;
+  document.getElementById('chat-messages').appendChild(msgDiv);
+  document.getElementById('chat-messages').scrollTop = document.getElementById('chat-messages').scrollHeight;
+}
+
+// Fake AI logic
+function getBotReply(userInput) {
+  const lower = userInput.toLowerCase();
+  if (lower.includes('society')) return "You can join a society via the Opportunities tab!";
+  if (lower.includes('freshers')) return "Freshers Week kicks off September 15. Check the Freshers section for updates.";
+  if (lower.includes('support')) return "You can visit the Support & Advice section for wellbeing, housing, or academic help.";
+  return "I'm here to help! Please check our menu or try asking something else.";
+}
