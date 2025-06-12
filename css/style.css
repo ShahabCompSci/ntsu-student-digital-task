@@ -49,16 +49,20 @@ nav ul {
 }
 
 .hero {
-  background: url('../assets/IAS.png') no-repeat center center/cover;
-  background-size: contain;
-  background-position: center top; 
+  background: url('../assets/IAS.png') no-repeat center center/contain;
+  background-position: center top;
   background-repeat: no-repeat;
-  height: 1920px; 
   width: 100%;
+  min-height: 400px;
+  padding: 80px 20px;
   color: white;
-  padding-top: 20px;
   font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
 
 .hero span {
   color: yellow;
@@ -85,6 +89,30 @@ nav ul {
   color: white;
   cursor: pointer;
 }
+
+.welcome-video {
+  background: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.welcome-video h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #29235c;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+.video-container iframe {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
 
 .purple { background: #7c3aed; }
 .red    { background: #ef4444; }
