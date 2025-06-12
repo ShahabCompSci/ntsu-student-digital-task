@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NTSU Exec – Jess Walker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!--  Embeded ReciteMe Script (Through premission if granted, ask rory for api key)-->  
+<script>
+  (function(d) {
+    var s = d.createElement("script");
+    s.setAttribute("src", "https://cdn.reciteme.com/recite/recite.js");
+    s.setAttribute("id", "recite-script");
+    s.setAttribute("data-recite-language", "en");
+    s.setAttribute("data-recite-theme", "light");
+    s.setAttribute("data-recite-key", "YOUR_PUBLIC_API_KEY_HERE"); // Replace this
+    d.body.appendChild(s);
+  })(document);
+</script>
+
+
+  <!-- Chatbot Widget -->
+<div id="chatbot">
+  <div id="chat-toggle">💬</div>
+  <div id="chat-box" class="hidden">
+    <div id="chat-header">Ask NTSU AI 🤖</div>
+    <div id="chat-messages"></div>
+    <input type="text" id="chat-input" placeholder="Type your question..." />
+  </div>
+</div>
+
+
+<!-- Top bar -->
+<div class="top-bar">
+  <input type="text" placeholder="I'm looking for...">
+
+  <div class="top-buttons">
+    <button>Language</button>
+
+    <!-- Accessibility Tools Button with Preview Panel -->
+    <div class="accessibility-wrapper">
+      <button class="accessibility-btn">Accessibility Tools</button>
+      <div class="accessibility-preview">
+        <p>🔊 Screen Reader</p>
+        <p>🌐 Language Options</p>
+        <p>🔍 Text Size</p>
+        <p>🎨 Contrast</p>
+        <hr style="margin: 8px 0;">
+        <p><a href="#" onclick="window.__recite.launch(); return false;" style="font-weight: bold; text-decoration: underline;">👉 See All Accessibility Tools</a></p>
+      </div>
+    </div>
+
+    <button>Sign in</button>
+  </div>
+</div>
+
+  <!-- Header + Nav -->
+  <header>
+    <img src="assets/NTSUlogo.png" alt="NTSU Logo" class="logo">
+    <nav>
+      <ul>
+        <li>About us ▼</li>
+        <li>Student Voice ▼</li>
+        <li>Eat, Drink & Shop ▼</li>
+        <li>Opportunities ▼</li>
+        <li>Support & Advice ▼</li>
+        <li>Freshers ▼</li>
+        <li>Sport ▼</li>
+        <li>Shop</li>
+        <li>What’s On</li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- Role Banner -->
+<div class="exec-banner">
+  <h1>President</h1>
+</div>
+
+<section class="exec-profile">
+  <div class="exec-container">
+    <img src="assets/Jess-Walker.png" alt="Jess Walker" class="exec-profile-pic">
+
+    <div class="exec-message">
+      <h2>Jess Walker – President</h2>
+      <p>
+        I'm Jess. I started my NTU journey back in 2020 and my university experience very quickly became different from what I'd originally imagined. I think those years of COVID definitely left a lasting impression on all of us. But, with things back to 'normal' I really believe that this is the year to bring back the community feel that our university once had.
+      </p>
+      <p>
+        This year, I'm committed to creating more opportunities for students to make friends and find their voice. I also want to make it much easier for students to actually be heard. To do this, I'm reviewing the processes of how change is made within our union and the university as a whole and adjusting them to make change more accessible for students.
+      </p>
+      <p>
+        Everything I do this year will be focused on making student life much better and helping you make the changes YOU want to see at our university come to life!
+      </p>
+      <p><strong>I'm so honoured to have been put into this position by you and I promise not to let you down!</strong></p>
+      <a href="mailto:jess.walker@ntu.ac.uk" class="exec-contact-btn">Contact →</a>
+    </div>
+  </div>
+  <!-- What I'm Working On -->
+<section class="exec-work">
+  <h2>What I'm working on</h2>
+
+  <div id="work-toggle" class="work-bar">
+    <span>President – What I'm working on</span>
+    <span class="work-date">Friday 14 Feb 2025</span>
+  </div>
+
+  <div id="work-content" class="work-content hidden">
+    <ul>
+      <li>Supporting isolated students and creating a celebratory atmosphere through the Festive Fortnight project.</li>
+      <li>Embedding the Students' Union's new values by training Student Council and displaying values prominently.</li>
+      <li>Expanding the Varsity project to create a larger, more impactful event.</li>
+      <li>Increasing support for religious students by opening a Multifaith Prayer Space in the SU.</li>
+      <li>Enhancing student retention by increasing access to hardship funds and launching the Essentials Hub food-club project.</li>
+    </ul>
+  </div>
+</section>
+</section>
+
+<script>
+  const bar   = document.getElementById('work-toggle');
+  const panel = document.getElementById('work-content');
+
+  bar.addEventListener('click', () => {
+    panel.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>

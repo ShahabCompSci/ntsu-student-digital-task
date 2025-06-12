@@ -132,3 +132,4 @@ function updateCampusInfo() {
 
 // Load default campus on page load
 window.onload = updateCampusInfo;
+
