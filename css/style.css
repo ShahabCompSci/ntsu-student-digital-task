@@ -113,8 +113,50 @@ nav ul {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
+.today-on-campus {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.today-on-campus h2 {
+  font-size: 2em;
+  color: #29235c;
+  margin-bottom: 30px;
+}
+
+#events-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.event-card {
+  background: #ffffff;
+  border-left: 6px solid #29235c;
+  padding: 15px 25px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+  margin: 0 0 10px;
+  color: #29235c;
+}
+
+.event-card p {
+  margin: 0;
+  color: #333;
+}
+
 
 .purple { background: #7c3aed; }
 .red    { background: #ef4444; }
 .orange { background: #f97316; }
 .teal   { background: #14b8a6; }
+
+
