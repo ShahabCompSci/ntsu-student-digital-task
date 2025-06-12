@@ -8,6 +8,21 @@
 </head>
 <body>
  
+
+<!--  Embeded ReciteMe Script (Through premission if granted, ask rory for api key)-->  
+<script>
+  (function(d) {
+    var s = d.createElement("script");
+    s.setAttribute("src", "https://cdn.reciteme.com/recite/recite.js");
+    s.setAttribute("id", "recite-script");
+    s.setAttribute("data-recite-language", "en");
+    s.setAttribute("data-recite-theme", "light");
+    s.setAttribute("data-recite-key", "YOUR_PUBLIC_API_KEY_HERE"); // Replace this
+    d.body.appendChild(s);
+  })(document);
+</script>
+
+
   <!-- Chatbot Widget -->
 <div id="chatbot">
   <div id="chat-toggle">💬</div>
@@ -19,15 +34,29 @@
 </div>
 
 
-  <!-- Top bar -->
-  <div class="top-bar">
-    <input type="text" placeholder="I'm looking for...">
-    <div class="top-buttons">
-      <button>Language</button>
-      <button>Accessibility Tools</button>
-      <button>Sign in</button>
+<!-- Top bar -->
+<div class="top-bar">
+  <input type="text" placeholder="I'm looking for...">
+
+  <div class="top-buttons">
+    <button>Language</button>
+
+    <!-- Accessibility Tools Button with Preview Panel -->
+    <div class="accessibility-wrapper">
+      <button class="accessibility-btn">Accessibility Tools</button>
+      <div class="accessibility-preview">
+        <p>🔊 Screen Reader</p>
+        <p>🌐 Language Options</p>
+        <p>🔍 Text Size</p>
+        <p>🎨 Contrast</p>
+        <hr style="margin: 8px 0;">
+        <p><a href="#" onclick="window.__recite.launch(); return false;" style="font-weight: bold; text-decoration: underline;">👉 See All Accessibility Tools</a></p>
+      </div>
     </div>
+
+    <button>Sign in</button>
   </div>
+</div>
 
   <!-- Header + Nav -->
   <header>
