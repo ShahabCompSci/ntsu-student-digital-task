@@ -601,6 +601,59 @@ nav ul {
   padding: 60px 20px 80px;
 }
 
+/* ─────  Exec grid  ───── */
+.exec-team {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.exec-team h2 {
+  font-size: 2rem;
+  margin-bottom: 35px;
+  color: #29235c;
+}
+
+.exec-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;          /* Centres the grid block */
+}
+
+.exec-card {
+  text-align: center;
+}
+
+.exec-card img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.1);
+}
+
+.exec-card h3 {
+  margin: 12px 0 6px;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+.exec-role {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: .9rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Optional colour tags for each role */
+.exec-role.president   { background: #ffc400; }
+.exec-role.sport       { background: #ff008c; }
+.exec-role.welfare     { background: #008b8b; }
+.exec-role.edu         { background: #7ac70c; }
+.exec-role.opps        { background: #d62828; }
+.exec-role.env         { background: #ff8a00; }
 
 
 .purple { background: #7c3aed; }
