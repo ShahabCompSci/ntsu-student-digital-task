@@ -273,6 +273,59 @@ nav ul {
   font-size: 0.95em;
 }
 
+.campus-finder {
+  background: #fff2f4;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.campus-finder h2 {
+  color: #29235c;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.campus-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.campus-map {
+  flex: 1 1 500px;
+  height: 400px;
+  min-width: 300px;
+}
+
+.campus-info {
+  flex: 1 1 400px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  min-width: 280px;
+}
+
+.campus-info select {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.details-box {
+  font-size: 0.95em;
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  line-height: 1.6;
+}
 
 .purple { background: #7c3aed; }
 .red    { background: #ef4444; }
